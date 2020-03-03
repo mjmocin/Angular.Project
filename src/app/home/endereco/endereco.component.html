@@ -1,0 +1,73 @@
+<router-outlet name="EnderecoComponent"></router-outlet>
+<!-- <div class="p-grid">
+    <div class="p-col-4">
+        <button pButton type="button" label="Cliente" class="ui-button-rounded"></button>
+    </div>
+    <div class="p-col-4" style="text-align: center;">
+        <button pButton type="button" label="Endereço" class="ui-button-rounded"></button>
+    </div>
+    <div class="p-col-4" style="text-align: end;">
+        <button pButton type="button" label="Financeiro" class="ui-button-rounded"></button>
+    </div>
+</div> -->
+<div class="p-grid ui-fluid">
+        <div class="p-col-2">
+            <span>CEP</span>
+            <span style="color: red;">*</span>
+            <br>
+            <p-inputMask [(ngModel)]="val" mask="99999-999" size="20"></p-inputMask>
+        </div>
+        <div class="p-col-5">
+            <span>Endereço</span>
+            <span style="color: red;">*</span>
+            <br>
+            <input id="input" type="text" pInputText>
+        </div>
+        <div class="p-col-3">
+            <span>Numero</span>
+            <span style="color: red;">*</span>
+            <br>
+            <input id="input" type="number" pInputText>
+        </div>
+        <div class="p-col-2">
+            <span>complemento</span>
+            <br>
+            <input id="input" type="number" pInputText>
+        </div>
+        <div class="p-col-5">
+            <span>Bairro</span>
+            <span style="color: red;">*</span>
+            <br>
+            <input id="input" type="text" pInputText>
+        </div>
+        <div class="p-col-3">
+            <span>Cidade</span>
+            <span style="color: red;">*</span>
+            <br>
+            <input id="input" type="text" pInputText>
+        </div>
+        <div class="p-col-2">
+            <span>UF</span>
+            <span style="color: red;">*</span>
+            <br>
+            <p-dropdown [options]="UF" [(ngModel)]="escolha"></p-dropdown>
+        </div>
+        <div class="p-col-2">
+            <span>Pais</span>
+            <br>
+            <p-dropdown [options]="Pais" [(ngModel)]="PaisDrop"></p-dropdown>
+        </div>
+        <div class="p-col-6">
+            <span>Referencia para Entrega</span>
+            <br>
+            <input id="input" type="text" pInputText>
+        </div>
+        <Div class="p-col-1 p-col-align-center">
+            <br>
+            <p-checkbox [(ngModel)]="CobrancaC" binary="true" label="Cobrança"></p-checkbox>
+        </Div>
+        <Div class="p-col-1 p-col-align-center">
+            <br>
+            <p-checkbox [(ngModel)]="EntregaC" binary="true" label="Cobrança"></p-checkbox>
+        </Div>
+    </div>

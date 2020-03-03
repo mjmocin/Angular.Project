@@ -1,0 +1,22 @@
+<router-outlet name="LoginComponent"></router-outlet>
+<div class="p-grid p-justify-center ui-fluid" style="background: linear-gradient(DarkBlue, LightSkyBlue, white);">
+    <p-card class="ui-md-3">
+      <p-header>
+        <img src="Card" src="assets/informata.png">
+      </p-header>
+      <div>
+        <span class="ui-inputgroup-addon"><i class="pi pi-user"></i></span>
+        <br>
+        <div class="p-col-12">
+          <input [(ngModel)]='user' id="float-input" type="text" size="30" pInputText placeholder="usuario">
+        </div>
+        <div class="p-col-12">
+          <input [(ngModel)]='pass' id="float-input" type="password" size="30" pInputText placeholder="senha">
+        </div>
+        <br>
+        <button pButton (click)="login($event)" type="button" label="login" icon="pi pi-check" iconPos="left"></button>
+      </div>
+      <br>
+      <span style="color: red;">{{result}}</span>
+    </p-card>
+  </div>
